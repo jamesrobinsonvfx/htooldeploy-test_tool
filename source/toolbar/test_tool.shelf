@@ -13,17 +13,20 @@
   </toolshelf>
 
   <tool name="test_tool_1" label="Test Tool 1" icon="SOP_python">
-    <script scriptType="python"><![CDATA[from test_tool.tools import tool_1
-tool_1("First tool!")]]></script>
+    <script scriptType="python"><![CDATA[import test_tool.tools
+reload(test_tool.tools)
+test_tool.tools.tool_1("First tool!")]]></script>
   </tool>
 
   <tool name="test_tool_2" label="Test Tool 2" icon="SOP_python">
-    <script scriptType="python"><![CDATA[from test_tool.tools import tool_2
-tool_2("Second Tool!")]]></script>
+    <script scriptType="python"><![CDATA[import test_tool.tools
+reload(test_tool.tools)
+test_tool.tools.tool_2("Second Tool!")]]></script>
   </tool>
 
   <tool name="test_tool_3" label="Test Tool 3" icon="SOP_python">
-    <script scriptType="python"><![CDATA[from test_tool.tools import tool_3
-tool_3("Third tool!")]]></script>
+    <script scriptType="python"><![CDATA[import test_tool.tools
+reload(test_tool.tools)
+test_tool.tools.tool_3("Third tool!")]]></script>
   </tool>
 </shelfDocument>
