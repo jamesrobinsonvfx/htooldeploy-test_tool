@@ -29,4 +29,10 @@ test_tool.tools.tool_2("Second Tool!")]]></script>
 reload(test_tool.tools)
 test_tool.tools.tool_3("Third tool!")]]></script>
   </tool>
+
+  <tool name="test_tool_rubbertoy" label="Flippy" icon="SOP_testgeometry_rubbertoy">
+    <script scriptType="python"><![CDATA[import test_tool.tools
+reload(test_tool.tools)
+test_tool.tools.flippy()]]></script>
+  </tool>
 </shelfDocument>
